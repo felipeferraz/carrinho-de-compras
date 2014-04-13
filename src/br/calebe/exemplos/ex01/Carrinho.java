@@ -27,4 +27,41 @@ public class Carrinho {
         }
         return menor;
     }
+    
+    public double ValorCarrinho(){
+        if (produtos.isEmpty()) {
+            return 0;
+        }
+        double saldo = 0.00;
+        for (Produto produto : produtos) {
+            saldo = saldo + produto.getPreco();
+        }
+        return saldo;
+    }
+    
+    public boolean ListarProdutos(){
+        if (produtos.isEmpty()) {
+            System.out.println("Lista Vazia");
+            return true;
+        }
+        Integer i = 1;
+        Integer x = 0;
+        for(;x<1;x++){
+        for (Produto produto : produtos){ 
+            System.out.println(i + "] " + produto.getNome() +" Preço: " + produto.getPreco());
+            i++;
+        }
+        return true;
+        }
+        return false;
+        }
+    
+        
+    public boolean exists(Produto p){
+        return produtos.contains(p);
+    }
+    
+    public void remove(Produto p) {
+        produtos.remove(p);
+    }
 }
