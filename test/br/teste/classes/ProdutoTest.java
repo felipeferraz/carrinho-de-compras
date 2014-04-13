@@ -42,6 +42,7 @@ public class ProdutoTest {
         existe = p.existsPrecoNegativo();
         assertFalse(existe);
     }
+      
    
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:

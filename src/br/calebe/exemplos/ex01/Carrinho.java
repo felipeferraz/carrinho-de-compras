@@ -47,11 +47,11 @@ public class Carrinho {
         Integer i = 1;
         Integer x = 0;
         for(;x<1;x++){
-        for (Produto produto : produtos){ 
-            System.out.println(i + "] " + produto.getNome() +" Preço: " + produto.getPreco());
-            i++;
-        }
-        return true;
+            for (Produto produto : produtos){ 
+                System.out.println(i + "] " + produto.getNome() +" Preço: " + produto.getPreco());
+                i++;
+            }
+            return true;
         }
         return false;
         }
