@@ -14,7 +14,15 @@ public class Carrinho {
     public void add(Produto produto) {
         produtos.add(produto);
     }
-
+    
+    public Integer getSizeProdutos(){
+        return produtos.size();
+    }
+    
+    public List<Produto> getProduto(){
+        return produtos;
+    }
+    
     public Produto menorProduto() throws CarrinhoVazioExpected {
         if (produtos.isEmpty()) {
             throw new CarrinhoVazioExpected();
