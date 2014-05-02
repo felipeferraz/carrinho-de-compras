@@ -56,7 +56,11 @@ public class Carrinho {
         return false;
         }
     
-        
+    public boolean PagarCarrinho(SistemaDeCartaoDeCredito cartao, double saldo){
+        if(cartao != null) return true;
+        return false;
+    }    
+    
     public boolean exists(Produto p){
         return produtos.contains(p);
     }
